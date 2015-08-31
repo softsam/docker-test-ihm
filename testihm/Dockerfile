@@ -9,8 +9,6 @@ ENV PATH /usr/bin/node:$PATH
 RUN apt-get -y update \
     && apt-get install -y npm graphicsmagick \
     && apt-get clean \
-    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
-    && apt-get -y update
     
 RUN npm install -g jasmine
 RUN npm install -g webdriverio@2.4.5
