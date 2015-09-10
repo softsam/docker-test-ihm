@@ -2,8 +2,6 @@ FROM ubuntu:latest
 
 MAINTAINER Guillaume Charléty <guillaume.charlety@orange.com
 
-ENV http_proxy http://proxy:3128 
-ENV https_proxy http://proxy:3128
 ENV PATH /usr/bin/node:$PATH
 
 RUN apt-get -y update \
